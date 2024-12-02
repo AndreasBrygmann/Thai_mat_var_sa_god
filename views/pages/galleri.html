@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../src/css/galleri.css">
+  <title>Galleri</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+    </script>
+  <script>
+    $(document).ready(function () {
+      $("#header").load("pagesheader.html", function () {
+        hamburgerMenu();
+        imgModal();
+      });
+      $("#footer").load("pagesfooter.html");
+    });
+  </script>
+  <script type="text/javascript" defer src="../../src/js/hamburger-menu.js"></script>
+  <script type="text/javascript" defer src="../../src/js/galleri.js"></script>
+</head>
+
+<body>
+  <header id="header"></header>
+
+  <div class="text">
+    <h1>Galleri</h1>
+    <h3>Bilder fra våre oppdrag</h3>
+  </div>
+
+  <main class="gallery_container" id="gallery_container">
+    <div class="pictures">
+      <img class="single-picture" src="../../src/img/thaimaigallerikjokken.webp" alt="Matlaging i bua">
+      <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" alt="modal">
+        <div class="caption">
+        </div>
+      </div>
+    </div>
+
+    <div class="pictures">
+      <img class="single-picture" src="../../src/img/thaimatgalleribua.webp" alt="Thaibua">
+      <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content">
+        <div id="caption"></div>
+      </div>
+    </div>
+
+    <div class="pictures">
+      <img class="single-picture" src="../../src/img/thaimaigallerikjokken2.webp" alt="Matlaging til 40 års lag">
+      <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content">
+        <div id="caption"></div>
+      </div>
+    </div>
+
+    <div class="pictures">
+      <img class="single-picture" src="../../src/img/thaimatgallerimat.webp" alt="">
+      <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content">
+        <div id="caption"></div>
+      </div>
+    </div>
+
+    <div class="pictures">
+      <img class="single-picture" src="../../src/img/thaimatgallerimat2.webp" alt="takeaway">
+      <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content">
+        <div id="caption"></div>
+      </div>
+    </div>
+
+    <div class="pictures">
+      <img class="single-picture" src="../../src/img/thaimatgallerimat3.webp" alt="Fra konfirmasjon">
+      <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content">
+        <div id="caption"></div>
+      </div>
+    </div>
+
+    <div class="pictures">
+      <img class="single-picture" src="../../src/img/thaimatgallerimat4.webp" alt="Fra konfirmasjon">>
+      <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content">
+        <div id="caption"></div>
+      </div>
+    </div>
+
+    <div class="pictures">
+      <img class="single-picture" src="../../src/img/thaimatgallerimat5.webp" alt="Fra konfirmasjon">
+      <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content">
+        <div id="caption"></div>
+      </div>
+    </div>
+
+    <div class="pictures">
+      <img class="single-picture" src="../../src/img/thaimatgallerimat6.webp" alt="Takeaway vårruller">
+      <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content">
+        <div id="caption"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer"></footer>
+</body>
+
+</html>

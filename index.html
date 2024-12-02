@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjemmeside</title>
+    <link rel="stylesheet" type="text/css" href="src/css/frontpage.css">
+    <!-- importing JQuery library to load header and footer on every html -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+        </script>
+    <!-- <script src="/src/jquery.js"></script> -->
+    <script>
+        $(document).ready(function () {
+            /* avoids the async problem where the header is loaded and it doesnt find the hamburger script, avoids hamburger = null */
+            $(document).ready(function () {
+                $("#header").load("views/pages/header.html", function () {
+                    hamburgerMenu();
+                });
+                $("#footer").load("views/pages/footer.html");
+            });
+        });
+    </script>
+    <script type="text/javascript" defer src="src/js/hamburger-menu.js"></script>
+</head>
+
+<body>
+
+    <!-- The navigation bar consist of a desktop and mobile menu. The mobile menu is displayed when screen width is less than ca. 600 px -->
+    <div id="header"></div>
+
+    <main id="welcome-message">
+        <h2>Velkommen</h2>
+        <h3>enkelt, rimelig og greit</h3>
+        <p>Hjemmelaget mat og catering av thaimat i Vestfold. Gatekjøkken ved REMA 1000 i Svarstad. Vi
+            gjør det enkelt for deg, og ikke minst, rimelig</p>
+
+        <form action="views/pages/meny.php">
+            <button type="submit" id="action-button">Se vår meny</button>
+        </form>
+    </main>
+
+    <footer id="footer"></footer>
+
+</body>
+
+</html>

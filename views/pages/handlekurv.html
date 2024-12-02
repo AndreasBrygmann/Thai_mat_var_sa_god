@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlekurv</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../src/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../src/favicon/site.webmanifest">
+    <link rel="stylesheet" href="../../src/css/kurv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(document).ready(function () {
+            $("#header").load("pagesheader.html", function () {
+                hamburgerMenu();
+            });
+            $("#footer").load("pagesfooter.html");
+        });
+    </script>
+    <script type="text/javascript" defer src="../../src/js/hamburger-menu.js"></script>
+    <script src="../../src/js/cart.js" async></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <h2 id="category-title1">
+        Handlekurv
+    </h2>
+    <div class="cart-container">
+        <table class="cartTable">
+            <thead>
+                <tr>
+                    <th>Varenr</th>
+                    <th>Navn</th>
+                    <th>Pris</th>
+                    <th>Antall</th>
+                    <th>Slett</th>
+                </tr>
+            </thead>
+            <tbody class="cartElements" id="cartElements">
+            </tbody>
+        </table>
+        <br><br>
+        <p class="cartTotal" id="cartTotal"></p>
+        <br>
+        <button class="inputButton" type="button" onclick="window.location.href='faktura.html';" value="Fortsett">Fortsett</button>
+    </div>
+    <footer id="footer"></footer>
+
+    <script type="text/javascript" defer src="../../src/js/meny.js"></script>
+</body>
+
+</html>

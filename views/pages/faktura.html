@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakturainformasjon</title>
+    <link rel="stylesheet" href="../../src/css/kurv.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(document).ready(function () {
+            $("#header").load("pagesheader.html", function () {
+                hamburgerMenu();
+            });
+            $("#footer").load("pagesfooter.html");
+        });
+    </script>
+    <script defer src="../../src/js/hamburger-menu.js"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <h2 id="category-title1">
+        Handlekurv
+    </h2>
+
+    <div class="cart-container">
+
+        <h3 class="invoice_title">
+            Fakturainformasjon
+        </h3>
+        <div>
+            <form class="info-container" action="bekreft.php" method="POST">
+                <input type="text" name="name" placeholder="Navn" required>
+
+                <input type="text" name="adress" placeholder="Gate">
+
+                <input type="text" name="postalcode" placeholder="Postnummer">
+
+                <input type="text" name="town" placeholder="By">
+
+                <input type="text" name="email" placeholder="Epost" required>
+
+                <input type="text" name="phone" placeholder="Telefon">
+                <br>
+                <textarea class="comment-area" name="comment" placeholder="Kommentar til ordre..."></textarea>
+                <div class="buttonpanel">
+                    <div><input type="checkbox" id="husk" name="husk">
+                        <label for="husk">Husk meg</label>
+                    </div>
+                    <input class="backbutton" type="button" onclick="window.location.href='index.html';"
+                        value="Tilbake" />
+                </div>
+
+
+                <input type="submit" value="Fortsett" />
+            </form>
+        </div>
+
+    </div>
+
+
+    <footer id="footer"></footer>
+
+    <script type="text/javascript" defer src="../../src/js/meny.js"></script>
+</body>
+
+</html>

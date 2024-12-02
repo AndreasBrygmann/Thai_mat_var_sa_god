@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om oss</title>
+    <link rel="stylesheet" href="../../src/css/om_oss.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(document).ready(function () {
+            $("#header").load("pagesheader.html", function () {
+                hamburgerMenu();
+            });
+            $("#footer").load("pagesfooter.html");
+        });
+    </script>
+    <script type="text/javascript" defer src="../../src/js/hamburger-menu.js"></script>
+</head>
+
+<body>
+
+    <header id="header"></header>
+
+    <div class="grid-container">
+        <div class="sidebar">
+            <h2>Mer informasjon og bilder</h2>
+            <ul>
+                <li><a href="../pages/catering.html">Catering informasjon</a></li>
+                <li><a href="../pages/thaibua.html">Thaibua i Svarstad</a></li>
+                <li><a href="../pages/galleri.html">Galleri</a></li>
+                <li><a href="../pages/kontakt_form.html">Kontakt oss</a></li>
+            </ul>
+        </div>
+        <div class="content">
+
+            <h1>Om oss</h1>
+
+            <img class="employee" src="../../src/img/thaimatbilde.jpg" alt="Pictures of the employees">
+
+            <p>
+                Har du vært på ferie i Thailand? Husker du den gode maten? Den utrolige kombinasjonen av søtt og
+                syrlig.
+                Alle smakene fra urter og krydder i perfekt kombinasjon. Skulle du ønske at du kunne få servert
+                den
+                maten hjemme i din egen stue? Nå kan du det.
+            </p>
+            <p>
+                Puttida er vår chef. Hun kommer fra Chainat i sentrale Thailand, noen få mil nordvest for
+                Bangkok.
+                Hun
+                har bachelor degree i politisk vitenskap, og er ikke utdannet kokk. Men som mange Thai kvinner
+                har
+                hun
+                lært å lage mat av sin mor fra tidlig alder. Mat er veldig viktig for Thai. Det er kultur. Mat
+                skal
+                lages med friske ingredienser, kjøpt på markedet om morgenen. Det finnes ingen raske løsninger,
+                ingen
+                snarveier. Alt lages fra bunnen av i et ekte Thai kjøkken. Den filosofien har hun brakt med seg
+                inn
+                i
+                vårt firma. Vi lager så mye som mulig selv. Sauser, dipping, oljer og krydderblandinger.
+                Grønnsaker
+                og
+                kjøtt kutter vi selv. Microbølgeovn har vi ikke, og skal ikke ha!
+            </p>
+            <p>
+                Kontakt oss nå for nærmere informasjon. Vi gleder oss til å lage mat til deg. Hilsen chef
+                Puttida,
+                og
+                visergutt Simon....
+            </p>
+
+            <p><a href="../pages/kontakt_form.html" class="kontakt">Kontakt oss</a></p>
+        </div>
+        <div class="image">
+            <a href="wwww.facebook.com/thaimatvarsagod" class="socials">www.facebook.com/thaimatvarsagod</a>
+        </div>
+    </div>
+
+    <footer id="footer"></footer>
+</body>
+
+</html>

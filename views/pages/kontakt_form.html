@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt oss</title>
+    <link rel="stylesheet" href="../../src/css/kontakt_form.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(document).ready(function () {
+            $("#header").load("pagesheader.html", function () {
+                hamburgerMenu();
+            });
+            $("#footer").load("pagesfooter.html");
+        });
+    </script>
+    <script type="text/javascript" defer src="../../src/js/hamburger-menu.js"></script>
+</head>
+
+<body>
+
+    <header id="header"></header>
+
+    <!-- We've decided to use a third party solution that requires no backend language. When a user submits a form through
+    this form action, an email notification is sent to the email adress specified in the form action containing the
+    information in the input and text area -->
+    <main class="body">
+        <div class="form-container">
+            <h1>Kontakt Skjema</h1>
+            <form action="https://formsubmit.io/send/dung250@hotmail.com" method="post">
+                <input type="text" name="Navn" placeholder="Tast inn navnet" required>
+                <input type="email" name="Epost" placeholder="Tast inn epost adresse" required>
+                <input type="text" name="Emne" placeholder="Skriv emne" required>
+                <textarea name="message" placeholder="Skriv en melding..." required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+
+        <div class="information">
+            <h3>Epost</h3>
+            <p>thaimatvaersaagod@gmail.com</p>
+            <h3>Telefon</h3>
+            <p>+47 405 56 510</p>
+            <h3>Adresse</h3>
+            <p>Thaimatværsågod</p>
+            <p>Lågaveien 14, 3275 Svarstad</p>
+            <!-- Map showing the restaurant location -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2171.9923972670654!2d9.955005203027104!3d59.402073496313626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x4646d3b9a89b7191%3A0xc34f52e0c9df83c3!2sREMA%201000%20SVARSTAD%2C%20L%C3%A5gaveien%2014%2C%203275%20Svarstad%2C%20Vestfold%20og%20Telemark!3m2!1d59.4014715!2d9.957092399999999!4m5!1s0x4646d3043d871fa1%3A0x3548ea99343276c2!2sThaimatv%C3%A6rs%C3%A5god%2C%20L%C3%A5gaveien%2014%2C%203275%20Svarstad!3m2!1d59.4017456!2d9.9571472!5e0!3m2!1sno!2sno!4v1677105438324!5m2!1sno!2sno"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+    </main>
+
+
+
+    <footer id="footer"></footer>
+</body>
+
+</html>

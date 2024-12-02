@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering</title>
+    <link rel="stylesheet" type="text/css" href="../../src/css/catering.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(document).ready(function () {
+            $("#header").load("pagesheader.html", function () {
+                hamburgerMenu();
+            });
+            $("#footer").load("pagesfooter.html");
+        });
+    </script>
+    <script defer src="../../src/js/hamburger-menu.js"></script>
+</head>
+
+<body>
+
+    <header id="header"></header>
+
+    <h1 class="heading">Catering informasjon</h1>
+
+    <div class="tekstinfo">
+
+        <p>Thaimaiværsågod Catering AS leverer alle sine produkter i kjølebil. Dette gjør at vi ikke har en
+            geografisk begrensning på vårt dekningsområde, produktene blir behandlet med respekt og etter krav satt
+            av Mattilsynet. Da er det knyttet en kostnad til levering av produkter, er det opp til kunden om de
+            ønsker å hente maten selv eller få den levert.
+        </p>
+        <p>Til alle slags tilstelninger eller selskap lager vi maten for deg, enten i ditt eget kjøkken, eller her
+            hos oss. Har du vært på ferie og kommer sent hjem til tomt kjøleskap? Har du dårlig tid og kan ikke lage
+            middag. Ring oss. Vi kan levere på kort tid. Vi bringer maten hjem til deg til avtalt tid og pris. Eller
+            du kan hente den selv i bua ved REMA 1000 i Svarstad når bua er i drift (Mars-Novemeber).</p>
+        <p id="prompt">Kontakt oss for å bestille catering</p>
+        <p><a href="../pages/kontakt_oss.html" id="kontakt-link">Kontakt oss</a></p>
+    </div>
+
+
+
+    <footer id="footer"></footer>
+</body>
+
+</html>

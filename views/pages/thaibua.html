@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../src/css/thaibua.css">
+  <title>Thaibua</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+    </script>
+  <script>
+    $(document).ready(function () {
+      $("#header").load("pagesheader.html", function () {
+        hamburgerMenu();
+      });
+      $("#footer").load("pagesfooter.html");
+    });
+  </script>
+  <script type="text/javascript" defer src="../../src/js/hamburger-menu.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <header id="header"></header>
+
+    <h1 class="heading">Thaibua i Svarstad</h1>
+
+    <div class="tekstinfo">
+
+        <p>Foran REMA 1000 i Svarstad har vi fått lov å plassere vårt gatekjøkken. Her kan du kjøpe thaimat
+          og asiatisk mat
+          Åpent onsdag til søndag 14:00 - 19:00. Sesong fra slutten av mars til først i november
+        </p>
+        <p>Vår meny i vogna er basert på vår cateringmeny. Velkommen til oss for et raskt og rimelig
+          måltid. Ved enkelte anledninger er det noe ventetid hos oss fordi vi lager alt fra bunnen av, ferskt. Det kan
+          lønne seg å bestille på forhånd.
+        </p>
+       <p>
+        Vi ble anbefalt hos "Restaurant Guru" flere ganger. En stor ære for oss å motta disse
+        anbefalingene.
+       </p>
+
+       <div class="image-row">
+          <img src="../../src/img/award1.webp" alt="image1">
+          <img src="../../src/img/award2.webp" alt="image2">
+          <img src="../../src/img/award3.webp" alt="image3">
+          <img src="../../src/img/award4.webp" alt="image4">
+          <img src="../../src/img/award5.webp" alt="image5">
+       </div>
+    </div>
+
+  <footer id="footer"></footer>
+</body>
+
+</html>

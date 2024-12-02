@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto&family=Roboto+Condensed:wght@700&display=swap');
+
+/* header */
+
+
+.logo {
+    width: 6em;
+    height: 6em;
+    padding: 5px;
+    justify-content: flex-start;
+    border-radius: 10px;
+    filter: invert(27%) sepia(9%) saturate(3178%) hue-rotate(131deg) brightness(36%) contrast(80%);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.title {
+    font-size: 1rem;
+    padding: 5px;
+    color: #245B5B;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    display: none;
+    color: #245B5B;
+    cursor: pointer;
+    font-size: 2.5rem;
+    display: block;
+    padding: 10px;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-ul.show {
+    display: flex;
+}
+
+.nav-ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav-ul li a {
+    position: relative;
+    display: inline-block;
+    color: #245B5B;
+    font-family: 'Roboto';
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    padding-right: 2.5em;
+}
+
+.nav-ul li a:hover:not(#tlfnr) {
+    box-shadow: 0px 3px 0px #245B5B;
+}
+
+.cartAmount {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    font-size: 16px;
+    background-color: #245B5B;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    margin-right: 1.5em;
+}
+
+.cartAmount p {
+    line-height: 1.5em;
+}
+
+/* body */
+
+body {
+    background-color: #1D4915;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)), url(../img/background-alt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 15px;
+    width: 80%;
+}
+
+form button {
+    align-self: center;
+    width: 30%;
+}
+
+form textarea {
+    height: 15em;
+}
+
+.information {
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    line-height: 10px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+iframe {
+    margin: 1em;
+    border-radius: 15px;
+    width: 17em;
+}
+
+button {
+    margin-bottom: 1em;
+}
+
+input,
+textarea {
+    border-radius: 15px;
+    height: 2em;
+    padding: 10px;
+}
+
+h1 {
+    font-family: 'Roboto condensed', sans-serif;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    margin-top: auto;
+}
+
+.nav-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    margin: 10px;
+}
+
+.nav-footer li a {
+    display: inline-block;
+    color: #245B5B;
+    font-family: 'Roboto';
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-footer li a:hover {
+    box-shadow: 0px 3px 0px #245B5B;
+}
+
+#adresse {
+    list-style-type: none;
+    color: #245B5B;
+    margin: 1em;
+    font-size: 10px;
+}
+
+
+@media (max-width: 576px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .nav-footer li a {
+        font-size: 1rem;
+    }
+
+    .body-container-desktop {
+        display: none;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .body-container-desktop {
+        display: none;
+    }
+
+}
+
+@media (min-width: 640px) {}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 6em;
+        height: 6em;
+        justify-content: flex-start;
+    }
+
+    .title {
+        font-size: 1.3rem;
+        padding: 5px;
+        color: #245B5B;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    iframe {
+        height: 15em;
+        width: 70%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .desktop-menu {
+        display: block;
+    }
+
+
+    .nav-ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0;
+        list-style-type: none;
+        flex-direction: row;
+        font-size: 1rem;
+    }
+
+    .nav-ul li a {
+        font-size: 1rem;
+    }
+
+
+    nav {
+        background-color: white;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .nav-footer li a {
+        font-size: 1rem;
+        padding: 0px 20px;
+    }
+
+    .form-container {
+        width: 50%;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    iframe {
+        width: 20em;
+        align-self: center;
+        height: 10em;
+    }
+
+    .information {
+        font-size: 1.5rem;
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 1400px) {
+    .nav-ul {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    .nav-ul {
+        font-size: 1.5rem;
+    }
+
+    .nav-ul li a {
+        font-size: 1.5rem;
+        margin-right: 2em;
+    }
+
+    .nav-footer li a {
+        font-size: 1.5rem;
+
+    }
+
+    footer {
+        width: 100%;
+        background-color: white;
+        left: 0;
+        bottom: 0;
+        margin-top: auto;
+    }
+
+    .information {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        margin-left: -5%;
+
+    }
+
+    input {
+        height: 2.5em;
+    }
+
+    .form-container {
+        width: 30%;
+        padding-right: unset;
+        margin-right: unset;
+    }
+
+    .information {
+        margin-left: unset;
+        padding-left: unset;
+    }
+
+    .form-container textarea {
+        height: 10em;
+    }
+
+    button {
+        height: 2.5em;
+    }
+
+}
