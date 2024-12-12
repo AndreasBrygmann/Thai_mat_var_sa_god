@@ -1,8 +1,8 @@
 <?php
 
-$servername = "127.0.0.1:3306";
-$username= "249964";
-$password = "gOALipMB";
+$servername = "";
+$username= "";
+$password = "";
 
 $db_name = "249964";
 
